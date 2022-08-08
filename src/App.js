@@ -18,7 +18,7 @@ function App() {
         </Container>
       </Box>
       {/* about */}
-      <Box as='section' w='100vw' h={{ base: 880, md: 857 }}>
+      <Box as='section' w='100vw' minH={{ base: 880, md: 857 }}>
         <Container>
           <About />
         </Container>

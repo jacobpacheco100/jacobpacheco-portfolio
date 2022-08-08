@@ -23,11 +23,13 @@ import {
 import linkIcon from '../images/project-btn-icons/site-link.svg'
 import gitIcon from '../images/project-btn-icons/git-repo.svg'
 
-const Project = ({ name, img, repoUrl, siteUrl }) => {
+const Project = ({ name, img, repoUrl, siteUrl, imgPosition }) => {
   return (
-    <VStack>
+    <VStack mb={150}>
       <Box w='100%'>
-        <Box
+        <Link
+          href={siteUrl}
+          display='block'
           w='100%'
           h={481}
           bg='white'
@@ -35,10 +37,11 @@ const Project = ({ name, img, repoUrl, siteUrl }) => {
           border='1px solid #CCC9D6'
           backgroundImage={img}
           backgroundSize='cover'
-        ></Box>
+          backgroundPosition={imgPosition}
+        ></Link>
         <Flex
           w='100%'
-          h={100}
+          h={78}
           bg='white'
           rounded={'0 0 10px 10px'}
           border='1px solid #CCC9D6'
@@ -63,11 +66,23 @@ const Project = ({ name, img, repoUrl, siteUrl }) => {
             >
               +
             </MenuButton>
-            <MenuList>
-              <MenuItem as={Link} href={siteUrl}>
+
+            <MenuList color='black'>
+              <MenuItem
+                pb='15px'
+                borderBottom='1px solid black'
+                as={Link}
+                href={siteUrl}
+                _hover={{ bg: 'bg.200', textDecor: 'none' }}
+              >
                 Go to website
               </MenuItem>
-              <MenuItem as={Link} href={repoUrl}>
+              <MenuItem
+                _hover={{ bg: 'bg.200', textDecor: 'none' }}
+                pt='15px'
+                as={Link}
+                href={repoUrl}
+              >
                 Github repository
               </MenuItem>
             </MenuList>
