@@ -11,7 +11,7 @@ const DropMenu = () => {
   return (
     <Flex
       display={{ base: 'flex', md: 'none' }}
-      h='80px'
+      h='100px'
       align='center'
       justify='space-between'
     >

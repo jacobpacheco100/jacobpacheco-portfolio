@@ -2,7 +2,7 @@ export const containerStyles = {
   // style object for base or default style
   baseStyle: {
     // maxW='container.lg' px={10}
-    maxW: 'container.lg',
+    maxW: '1100px',
     px: 10,
   },
   // styles for different sizes ("sm", "md", "lg")

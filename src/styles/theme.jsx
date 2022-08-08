@@ -18,10 +18,10 @@ const theme = extendTheme({
     },
   },
   colors: {
-    primary: '#5F52F4',
-    black: '#17131B',
+    primary: '#7F00FE',
+    black: '#160F1E',
     bg: {
-      100: '#F8F7FC',
+      100: '#F7F8FC',
       200: '#E2E3F0',
     },
     text: {

@@ -13,7 +13,7 @@ export const buttonStyles = {
       color: 'white',
       px: 6,
       _hover: {
-        bg: whiten('primary', 10),
+        bg: '#6B00D7',
       },
     },
     socials: {
@@ -39,7 +39,7 @@ export const buttonStyles = {
       py: 6,
       w: 128,
       _hover: {
-        bg: whiten('primary', 10),
+        bg: '#6B00D7',
       },
     },
     projectRepo: {

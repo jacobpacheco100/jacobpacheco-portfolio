@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <Flex
       display={{ base: 'none', md: 'flex' }}
-      h='80px'
+      h='100px'
       justify='space-between'
       align='center'
     >
