@@ -1,4 +1,4 @@
-import { Flex, VStack, Heading, Img } from '@chakra-ui/react'
+import { Flex, VStack, Heading, Img, Link, Container } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 
@@ -13,7 +13,7 @@ const DropMenu = () => {
       display={{ base: 'flex', md: 'none' }}
       h='80px'
       align='center'
-      justify='center'
+      justify='space-between'
     >
       <HamburgerIcon
         onClick={toggleMenu}
@@ -26,25 +26,52 @@ const DropMenu = () => {
           pt={150}
           zIndex={2}
           bg='primary'
-          w='100vw'
+          w='74vw'
           h='100vh'
           pos='absolute'
           top={0}
+          left={0}
           direction='column'
-          align='center'
         >
-          <VStack
-            spacing='60px'
-            fontWeight='medium'
-            color='white'
-            textTransform='uppercase'
-          >
-            <Heading>about</Heading>
-            <Heading>Project</Heading>
-            <Heading>Contact</Heading>
-          </VStack>
+          <Container maxW='container.lg' px={10}>
+            <VStack
+              w='100%'
+              spacing='60px'
+              fontWeight='medium'
+              color='white'
+              textTransform='uppercase'
+            >
+              <Link
+                variant='menuLink'
+                pb={7}
+                borderBottom='1px solid #9289FF'
+                w='100%'
+                textAlign='center'
+              >
+                about
+              </Link>
+              <Link
+                variant='menuLink'
+                pb={7}
+                borderBottom='1px solid #9289FF'
+                w='100%'
+                textAlign='center'
+              >
+                Project
+              </Link>
+              <Link
+                variant='menuLink'
+                pb={7}
+                borderBottom='1px solid #9289FF'
+                w='100%'
+                textAlign='center'
+              >
+                Contact
+              </Link>
+            </VStack>
 
-          <Img src='' />
+            <Img src='' />
+          </Container>
         </Flex>
       )}
     </Flex>

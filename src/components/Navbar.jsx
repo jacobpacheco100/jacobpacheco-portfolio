@@ -15,12 +15,7 @@ const Navbar = () => {
         <Link>About</Link>
         <Link>Projects</Link>
         <Link>Contact</Link>
-        <Button
-          colorScheme='gray'
-          color='white'
-          bg='#3A353F'
-          rightIcon={<ChevronDownIcon />}
-        >
+        <Button variant='socials' rightIcon={<ChevronDownIcon />}>
           Socials
         </Button>
       </HStack>
