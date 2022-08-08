@@ -21,14 +21,10 @@ const About = () => {
       pb={{ base: 40 }}
       mx={{ base: '0', md: 'auto' }}
     >
-      <Heading
-        maxW={120}
-        lineHeight={0.9}
-        fontSize={40}
-        color='black'
-        ml={{ base: 0, md: '-40px' }}
-      >
-        AboutMe...
+      <Heading variant='sectionHeading' ml={{ base: 0, md: '-40px' }}>
+        About
+        <br />
+        Me...
       </Heading>
       <Grid
         mt={12}

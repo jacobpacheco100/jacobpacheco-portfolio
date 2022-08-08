@@ -23,6 +23,26 @@ export const buttonStyles = {
         bg: whiten('#3A353F', 6),
       },
     },
+    plusInfo: {
+      bg: 'white',
+      border: '1px solid black',
+      color: 'black',
+      _hover: {
+        bg: 'bg.100',
+      },
+      _active: {
+        bg: 'bg.100',
+      },
+    },
+    projectSite: {
+      bg: 'primary',
+      py: 6,
+      w: 128,
+    },
+    projectRepo: {
+      bg: 'black',
+      py: 6,
+    },
   },
   // default values for 'size', 'variant' and 'colorScheme'
 }
