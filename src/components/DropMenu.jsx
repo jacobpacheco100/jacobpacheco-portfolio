@@ -1,4 +1,4 @@
-import { Flex, Box, Link, VStack, Heading, Img } from '@chakra-ui/react'
+import { Flex, VStack, Heading, Img } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 
