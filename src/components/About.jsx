@@ -64,7 +64,7 @@ const About = () => {
           began.show less
         </Text>
       )}
-      <Button onClick={toggleMore} mt={12} w={100} bg='primary' color='white'>
+      <Button onClick={toggleMore} mt={12} w={100} variant='primary'>
         {more ? 'Less' : 'More'}
       </Button>
     </Box>

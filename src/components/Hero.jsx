@@ -13,9 +13,7 @@ const Hero = () => {
           Welcome! Im a frontend React developer. speacializing in programing
           and designing modern, effiicient web Applications
         </Text>
-        <Button bg='primary' color='white'>
-          Continue
-        </Button>
+        <Button variant='primary'>Continue</Button>
       </Box>
       <Img display={{ base: 'none', md: 'block' }} src={hero} />
     </Flex>
