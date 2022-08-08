@@ -1,6 +1,19 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      'html, body': {
+        color: 'text.dark',
+        lineHeight: '1.8',
+      },
+      p: {
+        fontSize: 18,
+        fontWeight: 'light',
+      },
+    },
+  },
   colors: {
     primary: '#5F52F4',
     black: '#17131B',

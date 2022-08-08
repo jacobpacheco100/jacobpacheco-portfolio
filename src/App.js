@@ -1,7 +1,9 @@
 import { Box, Container } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import DropMenu from './components/DropMenu'
+import Header from './components/Hero'
 import { useState } from 'react'
+import Hero from './components/Hero'
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <Container maxW='container.lg' px={10}>
           <Navbar />
           <DropMenu />
+          <Hero />
         </Container>
       </Box>
     </div>
