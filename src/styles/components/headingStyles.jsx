@@ -1,5 +1,3 @@
-import { color } from '@chakra-ui/styled-system'
-
 export const headingStyles = {
   // style object for base or default style
   baseStyle: {},

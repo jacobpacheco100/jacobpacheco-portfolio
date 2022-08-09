@@ -2,7 +2,6 @@ import React from 'react'
 import {
   VStack,
   HStack,
-  Heading,
   Text,
   Img,
   Box,
@@ -10,16 +9,7 @@ import {
   Flex,
   Link,
 } from '@chakra-ui/react'
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from '@chakra-ui/react'
+import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import linkIcon from '../images/project-btn-icons/site-link.svg'
 import gitIcon from '../images/project-btn-icons/git-repo.svg'
 

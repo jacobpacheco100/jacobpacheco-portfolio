@@ -1,5 +1,4 @@
-import { color } from '@chakra-ui/styled-system'
-import { darken, whiten } from '@chakra-ui/theme-tools'
+import { whiten } from '@chakra-ui/theme-tools'
 
 export const buttonStyles = {
   // style object for base or default style

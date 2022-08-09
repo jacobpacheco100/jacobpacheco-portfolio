@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text, Button, Img, Grid } from '@chakra-ui/react'
+import { Box, Heading, Text, Button, Img, Grid } from '@chakra-ui/react'
 import react from '../images/icons/skills/react.svg'
 import css from '../images/icons/skills/css.svg'
 import sass from '../images/icons/skills/sass.svg'

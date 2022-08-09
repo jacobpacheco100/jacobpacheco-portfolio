@@ -1,27 +1,6 @@
 import React from 'react'
-import {
-  VStack,
-  HStack,
-  Heading,
-  Text,
-  Img,
-  Box,
-  Button,
-  Flex,
-  Link,
-} from '@chakra-ui/react'
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from '@chakra-ui/react'
-import linkIcon from '../images/project-btn-icons/site-link.svg'
-import gitIcon from '../images/project-btn-icons/git-repo.svg'
+import { Heading, Box } from '@chakra-ui/react'
+
 import audiophile from '../images/project-previews/audiophile.jpg'
 import bookmark from '../images/project-previews/bookmark.jpg'
 import gameshow from '../images/project-previews/gameshow.jpg'
