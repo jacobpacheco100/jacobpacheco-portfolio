@@ -1,15 +1,9 @@
-export const headingStyles = {
+export const boxStyles = {
   // style object for base or default style
   baseStyle: {},
   // styles for different sizes ("sm", "md", "lg")
   sizes: {},
   // styles for different visual variants ("outline", "solid")
-  variants: {
-    sectionHeading: {
-      lineHeight: 0.9,
-      fontSize: 48,
-      color: 'black',
-    },
-  },
+  variants: {},
   // default values for 'size', 'variant' and 'colorScheme'
 }

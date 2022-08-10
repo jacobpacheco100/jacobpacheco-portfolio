@@ -118,10 +118,26 @@ const About = () => {
           </Text>
           {/* more icons */}
           <VStack position={{ md: 'absolute' }} top={680} spacing={10} left={0}>
-            <Img w={{ base: '64px', md: '95px' }} src={bootstrap} />
-            <Img w={{ base: '64px', md: '95px' }} src={sass} />
-            <Img w={{ base: '64px', md: '95px' }} src={adobe} />
-            <Img w={{ base: '64px', md: '95px' }} src={git} />
+            <Img
+              w={{ base: '64px', md: '95px' }}
+              display={{ base: 'none', md: 'block' }}
+              src={bootstrap}
+            />
+            <Img
+              w={{ base: '64px', md: '95px' }}
+              display={{ base: 'none', md: 'block' }}
+              src={sass}
+            />
+            <Img
+              w={{ base: '64px', md: '95px' }}
+              display={{ base: 'none', md: 'block' }}
+              src={adobe}
+            />
+            <Img
+              w={{ base: '64px', md: '95px' }}
+              display={{ base: 'none', md: 'block' }}
+              src={git}
+            />
           </VStack>
         </Box>
       )}

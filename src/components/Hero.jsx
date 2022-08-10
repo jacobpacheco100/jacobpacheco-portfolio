@@ -1,6 +1,16 @@
 import React from 'react'
-import { Heading, Text, Button, Box, Flex, Img } from '@chakra-ui/react'
+import {
+  Heading,
+  Text,
+  Button,
+  Box,
+  Flex,
+  Img,
+  HStack,
+  Link,
+} from '@chakra-ui/react'
 import hero from '../images/illustrations/hero.png'
+import { AiFillGithub } from 'react-icons/ai'
 
 const Hero = () => {
   return (
@@ -28,9 +38,24 @@ const Hero = () => {
           Welcome! I specialize in designing and developing high quality web
           applications
         </Text>
-        <Button variant='primary'>Continue</Button>
+        <HStack spacing={4}>
+          <Button
+            as={Link}
+            href='https://github.com/JacobPacheco100'
+            border='1px solid #69666C'
+            h={50}
+            px={3}
+            bg='#3a353f'
+            _hover={{ bg: '#201A25' }}
+          >
+            <AiFillGithub color='white' fontSize={32} />
+          </Button>
+          <Button h={50} variant='primary'>
+            Continue
+          </Button>
+        </HStack>
       </Box>
-      <Img src={hero} maxW={600} display={{ base: 'none', md: 'block' }} />
+      <Img src={hero} display={{ base: 'none', md: 'inline' }} />
     </Flex>
   )
 }
