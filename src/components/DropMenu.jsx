@@ -1,6 +1,7 @@
-import { Flex, VStack, Img, Link, Container } from '@chakra-ui/react'
+import { Flex, VStack, Img, Link, Container, Box } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
+import IconGroup from './IconGroup'
 
 const DropMenu = () => {
   const [menu, setMunu] = useState(false)
@@ -17,13 +18,14 @@ const DropMenu = () => {
     >
       <HamburgerIcon
         onClick={toggleMenu}
+        _hover={{ cursor: 'pointer' }}
         zIndex={3}
         color='white'
         fontSize={30}
       />
       {menu && (
         <Flex
-          pt={150}
+          pt='100px'
           zIndex={2}
           bg='primary'
           w='74vw'
@@ -36,7 +38,7 @@ const DropMenu = () => {
           <Container maxW='container.lg' px={10}>
             <VStack
               w='100%'
-              spacing='60px'
+              spacing='30px'
               fontWeight='medium'
               color='white'
               textTransform='uppercase'
@@ -70,7 +72,16 @@ const DropMenu = () => {
               </Link>
             </VStack>
 
-            <Img src='' />
+            <Flex h='46vh' align='center' justify='center'>
+              <IconGroup
+                spacing={5}
+                direction='column'
+                color='white'
+                bg='#400A77'
+                colorHV='white'
+                bgHV='primary'
+              />
+            </Flex>
           </Container>
         </Flex>
       )}

@@ -3,6 +3,7 @@ import { buttonStyles as Button } from './components/buttonStyles'
 import { linkStyles as Link } from './components/linkStyles'
 import { containerStyles as Container } from './components/containerStyles'
 import { headingStyles as Heading } from './components/headingStyles'
+import { imgStyles as Img } from './components/imgStyles'
 
 const theme = extendTheme({
   styles: {
@@ -35,6 +36,7 @@ const theme = extendTheme({
     Link,
     Container,
     Heading,
+    Img,
   },
 })
 
