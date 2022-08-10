@@ -12,7 +12,7 @@ import {
 import hero from '../images/illustrations/hero.png'
 import { AiFillGithub } from 'react-icons/ai'
 
-const Hero = () => {
+const Hero = ({ continueBtn }) => {
   return (
     //424
     <Flex mt={100} justify='space-between' align='center'>
@@ -50,7 +50,7 @@ const Hero = () => {
           >
             <AiFillGithub color='white' fontSize={32} />
           </Button>
-          <Button h={50} variant='primary'>
+          <Button onClick={continueBtn} h={50} variant='primary'>
             Continue
           </Button>
         </HStack>

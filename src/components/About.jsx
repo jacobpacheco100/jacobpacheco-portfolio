@@ -29,7 +29,8 @@ const About = () => {
   }
 
   return (
-    <Box
+    <Flex
+      direction='column'
       w='100%'
       maxW={{ base: 700, md: 830 }}
       pt={{ base: 120 }}
@@ -141,10 +142,16 @@ const About = () => {
           </VStack>
         </Box>
       )}
-      <Button onClick={toggleMore} mt={12} w={100} variant='primary'>
+      <Button
+        alignSelf='flex-end'
+        onClick={toggleMore}
+        mt={12}
+        w={100}
+        variant='primary'
+      >
         {more ? 'Less' : 'More'}
       </Button>
-    </Box>
+    </Flex>
   )
 }
 
