@@ -16,10 +16,12 @@ export const buttonStyles = {
       },
     },
     socials: {
-      bg: '#3A353F',
+      bg: 'gray',
       color: 'white',
+      border: '1px solid #69666C',
+
       _hover: {
-        bg: whiten('#3A353F', 6),
+        bg: 'grayHV',
       },
     },
     plusInfo: {

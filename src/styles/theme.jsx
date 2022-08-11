@@ -21,6 +21,9 @@ const theme = extendTheme({
   colors: {
     primary: '#7F00FE',
     black: '#160F1E',
+    gray: '#3a353f',
+    grayHV: '#201A25',
+    grayBorder: '#69666C',
     bg: {
       100: '#F7F8FC',
       200: '#E2E3F0',

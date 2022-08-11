@@ -3,7 +3,15 @@ import { SiUpwork } from 'react-icons/si'
 import { ImLinkedin2 } from 'react-icons/im'
 import { Box, Flex, Img, Link, Stack } from '@chakra-ui/react'
 
-const IconGroup = ({ spacing, direction, color, bg, colorHV, bgHV }) => {
+const IconGroup = ({
+  spacing,
+  direction,
+  color,
+  bg,
+  colorHV,
+  bgHV,
+  border,
+}) => {
   return (
     <Stack spacing={spacing} direction={direction}>
       <Flex
@@ -18,6 +26,8 @@ const IconGroup = ({ spacing, direction, color, bg, colorHV, bgHV }) => {
         rounded='full'
         color={color}
         p='3px 0 0 2px'
+        border='1px solid'
+        borderColor={border}
       >
         <SiUpwork fontSize={22} />
       </Flex>
@@ -33,6 +43,8 @@ const IconGroup = ({ spacing, direction, color, bg, colorHV, bgHV }) => {
         bg={bg}
         rounded='full'
         color={color}
+        border='1px solid'
+        borderColor={border}
       >
         <ImLinkedin2 fontSize={20} />
       </Flex>
@@ -48,6 +60,8 @@ const IconGroup = ({ spacing, direction, color, bg, colorHV, bgHV }) => {
         bg={bg}
         rounded='full'
         color={color}
+        border='1px solid'
+        borderColor={border}
       >
         <AiOutlineTwitter fontSize={25} />
       </Flex>
@@ -63,6 +77,8 @@ const IconGroup = ({ spacing, direction, color, bg, colorHV, bgHV }) => {
         bg={bg}
         rounded='full'
         color={color}
+        border='1px solid'
+        borderColor={border}
       >
         <AiFillGithub fontSize={27} />
       </Flex>

@@ -45,8 +45,8 @@ const Hero = ({ continueBtn }) => {
             border='1px solid #69666C'
             h={50}
             px={3}
-            bg='#3a353f'
-            _hover={{ bg: '#201A25' }}
+            bg={'gray'}
+            _hover={{ bg: 'grayHV' }}
           >
             <AiFillGithub color='white' fontSize={32} />
           </Button>
