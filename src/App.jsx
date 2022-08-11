@@ -61,7 +61,7 @@ function App() {
       {/* footer */}
       <Box as='footer' w='100vw' py={7} bg='black'>
         <Text textAlign='center' fontWeight={400} fontSize={14}>
-          © 2000-2022 Jacob Pacheco. All Rights Reserved.
+          © 2022-2022 Jacob Pacheco. All Rights Reserved.
         </Text>
       </Box>
     </div>

@@ -36,7 +36,7 @@ const Navbar = ({ about, projects, contact }) => {
               color='primary'
               bg='grayHV'
               border='#69666C'
-              bgHV='gray'
+              bgHV='grayLight'
               colorHV='white'
             />
           </Box>

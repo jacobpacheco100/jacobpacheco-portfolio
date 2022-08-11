@@ -4,17 +4,30 @@ import {
   Button,
   Box,
   Flex,
-  Img,
   FormControl,
-  FormLabel,
   Input,
   Textarea,
   VStack,
 } from '@chakra-ui/react'
+import { useState } from 'react'
 
 import IconGroup from './IconGroup'
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  function handleChange(event) {
+    setFormData((prev) => {
+      return { ...formData, [event.target.name]: event.target.value }
+    })
+  }
+  console.log(formData)
+
+  const validate = () => {}
   return (
     <Flex
       direction={{ base: 'column', lg: 'row' }}
@@ -49,26 +62,32 @@ const Contact = () => {
           />
         </Flex>
       </Box>
-      <FormControl maxW={'600px'} isRequired>
+      <FormControl onSubmit={validate} maxW={'600px'} isRequired>
         <VStack spacing={4} color='text.light'>
           <Input
             _focus={{ borderColor: 'primary' }}
             bg='white'
             placeholder='First name'
+            name='name'
+            onChange={handleChange}
           />
           <Input
             _focus={{ borderColor: 'primary' }}
             bg='white'
             placeholder='Email address'
             type='email'
+            name='email'
+            onChange={handleChange}
           />
           <Textarea
             _focus={{ borderColor: 'primary' }}
             bg='white'
             minH={200}
             placeholder='Message'
+            name='message'
+            onChange={handleChange}
           />
-          <Button variant='primary' w='100%'>
+          <Button type='submit' variant='primary' w='100%'>
             Send
           </Button>
         </VStack>

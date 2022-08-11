@@ -16,7 +16,7 @@ export const buttonStyles = {
       },
     },
     socials: {
-      bg: 'gray',
+      bg: 'grayLight',
       color: 'white',
       border: '1px solid #69666C',
 

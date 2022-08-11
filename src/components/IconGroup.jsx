@@ -26,7 +26,7 @@ const IconGroup = ({
         rounded='full'
         color={color}
         p='3px 0 0 2px'
-        border='1px solid'
+        border='1px solid transparent'
         borderColor={border}
       >
         <SiUpwork fontSize={22} />
@@ -43,7 +43,7 @@ const IconGroup = ({
         bg={bg}
         rounded='full'
         color={color}
-        border='1px solid'
+        border='1px solid transparent'
         borderColor={border}
       >
         <ImLinkedin2 fontSize={20} />
@@ -60,7 +60,7 @@ const IconGroup = ({
         bg={bg}
         rounded='full'
         color={color}
-        border='1px solid'
+        border='1px solid transparent'
         borderColor={border}
       >
         <AiOutlineTwitter fontSize={25} />
@@ -77,7 +77,7 @@ const IconGroup = ({
         bg={bg}
         rounded='full'
         color={color}
-        border='1px solid'
+        border='1px solid transparent'
         borderColor={border}
       >
         <AiFillGithub fontSize={27} />

@@ -48,23 +48,19 @@ const About = () => {
         direction={{ base: 'row', md: 'column' }}
         mt={12}
         justify='space-between'
-        h={{ md: '510px' }}
+        h={{ md: '640px' }}
         maxW={{ base: '100%', md: 680 }}
         position={{ md: 'absolute' }}
         top={20}
         left={'0px'}
       >
-        <Img w={{ base: '64px', md: '95px' }} src={react} />
-        <Img w={{ base: '64px', md: '95px' }} src={js} />
-        <Img w={{ base: '64px', md: '95px' }} src={css} />
-        <Img w={{ base: '64px', md: '95px' }} src={html} />
+        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={react} />
+        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={js} />
+        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={css} />
+        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={html} />
+        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={git} />
         <Img
-          w={{ base: '64px', md: '110px' }}
-          display={{ base: 'block', md: 'none' }}
-          src={git}
-        />
-        <Img
-          w={{ base: '64px', md: '110px' }}
+          w={{ base: '48px', sm: '64px', md: '95px' }}
           display={{ base: 'block', md: 'none' }}
           src={adobe}
         />
@@ -118,7 +114,7 @@ const About = () => {
             to learn React Js on scrimba and am still actively learning...
           </Text>
           {/* more icons */}
-          <VStack position={{ md: 'absolute' }} top={680} spacing={10} left={0}>
+          <VStack position={{ md: 'absolute' }} top={810} spacing={10} left={0}>
             <Img
               w={{ base: '64px', md: '95px' }}
               display={{ base: 'none', md: 'block' }}
@@ -142,13 +138,7 @@ const About = () => {
           </VStack>
         </Box>
       )}
-      <Button
-        alignSelf='flex-end'
-        onClick={toggleMore}
-        mt={12}
-        w={100}
-        variant='primary'
-      >
+      <Button onClick={toggleMore} mt={12} w={100} variant='plusInfo'>
         {more ? 'Less' : 'More'}
       </Button>
     </Flex>
