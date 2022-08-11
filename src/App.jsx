@@ -31,7 +31,11 @@ function App() {
             projects={() => scrollToSection(projects)}
             contact={() => scrollToSection(contact)}
           />
-          <DropMenu />
+          <DropMenu
+            about={() => scrollToSection(about)}
+            projects={() => scrollToSection(projects)}
+            contact={() => scrollToSection(contact)}
+          />
           <Hero continueBtn={() => scrollToSection(about)} />
         </Container>
       </Box>

@@ -3,7 +3,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
 import IconGroup from './IconGroup'
 
-const DropMenu = () => {
+const DropMenu = ({ about, projects, contact }) => {
   const [menu, setMunu] = useState(false)
 
   function toggleMenu() {
@@ -25,12 +25,12 @@ const DropMenu = () => {
       />
       {menu && (
         <Flex
+          position={'fixed'}
           pt='100px'
           zIndex={2}
           bg='primary'
           w='74vw'
           h='100vh'
-          pos='absolute'
           top={0}
           left={0}
           direction='column'
@@ -42,8 +42,10 @@ const DropMenu = () => {
               fontWeight='medium'
               color='white'
               textTransform='uppercase'
+              onClick={toggleMenu}
             >
               <Link
+                onClick={about}
                 variant='menuLink'
                 pb={7}
                 borderBottom='1px solid #9289FF'
@@ -53,15 +55,17 @@ const DropMenu = () => {
                 about
               </Link>
               <Link
+                onClick={projects}
                 variant='menuLink'
                 pb={7}
                 borderBottom='1px solid #9289FF'
                 w='100%'
                 textAlign='center'
               >
-                Project
+                Projects
               </Link>
               <Link
+                onClick={contact}
                 variant='menuLink'
                 pb={7}
                 borderBottom='1px solid #9289FF'
