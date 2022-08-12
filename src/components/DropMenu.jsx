@@ -84,7 +84,6 @@ const DropMenu = ({ about, projects, contact }) => {
                 bg='#400A77'
                 colorHV='white'
                 bgHV='primary'
-                border='red'
               />
             </Flex>
           </Container>

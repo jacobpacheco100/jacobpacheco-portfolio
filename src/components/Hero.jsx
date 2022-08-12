@@ -16,7 +16,7 @@ const Hero = ({ continueBtn }) => {
   return (
     //424
     <Flex mt={100} justify='space-between' align='center'>
-      <Box maxW={{ base: 350, md: 900 }} pr={5}>
+      <Box zIndex={1} maxW={{ base: 350, md: 900 }} pr={5}>
         <Heading
           fontSize='48px'
           maxW={{ base: 300, md: 400 }}
