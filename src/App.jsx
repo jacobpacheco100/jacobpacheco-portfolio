@@ -24,7 +24,14 @@ function App() {
   return (
     <div className='App'>
       {/* header */}
-      <Box as='header' w='100vw' h='723px' bg='black' pos='relative'>
+      <Box
+        as='header'
+        w='100vw'
+        h='723px'
+        bg='black'
+        pos='relative'
+        overflow='hidden'
+      >
         {/* bg gradients */}
         <div
           style={{
@@ -90,21 +97,13 @@ function App() {
         w='100vw'
         minH={{ base: 880, md: 857 }}
         bg='white'
-        pos='absolute'
       >
         <Container>
           <About />
         </Container>
       </Box>
       {/* projects */}
-      <Box
-        ref={projects}
-        mt={{ base: 1000, md: 857 }}
-        as='section'
-        w='100vw'
-        py={40}
-        bg='bg.100'
-      >
+      <Box ref={projects} as='section' w='100vw' py={40} bg='bg.100'>
         <Container>
           <Projects />
         </Container>
