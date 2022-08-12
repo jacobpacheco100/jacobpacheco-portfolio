@@ -78,7 +78,7 @@ const DropMenu = ({ about, projects, contact }) => {
 
             <Flex h='46vh' align='center' justify='center'>
               <IconGroup
-                spacing={5}
+                spacing={8}
                 direction='column'
                 color='white'
                 bg='#400A77'
