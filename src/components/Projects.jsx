@@ -4,7 +4,7 @@ import { Heading, Box } from '@chakra-ui/react'
 import audiophile from '../images/project-previews/audiophile.jpg'
 import bookmark from '../images/project-previews/bookmark.jpg'
 import gameshow from '../images/project-previews/gameshow.jpg'
-import devjobs from '../images/project-previews/devjobs.jpg'
+import gradientology from '../images/project-previews/gradientology.jpg'
 
 import Project from './Project'
 
@@ -24,15 +24,15 @@ const Projects = () => {
       name: 'Bookmark Landing Page',
       img: bookmark,
       imgPosition: '',
-      repoUrl: 'https://github.com/JacobPacheco100/bookmark-landing-page',
+      repoUrl: 'https://github.com/jacobpacheco100/bookmark-landing-page',
       siteUrl: 'https://jacobpacheco100.github.io/bookmark-landing-page/',
     },
     {
-      name: 'Devjobs Web App',
-      img: devjobs,
+      name: 'Gradientology',
+      img: gradientology,
       imgPosition: '',
-      repoUrl: 'https://github.com/JacobPacheco100/DevJobs-App',
-      siteUrl: '',
+      repoUrl: 'https://github.com/jacobpacheco100/gradientology',
+      siteUrl: 'https://jacobpacheco100.github.io/gradientology/',
     },
     {
       name: 'Game Show App',
