@@ -14,7 +14,7 @@ const Projects = () => {
     {
       name: 'Gradientology',
       img: gradientology,
-      imgPosition: 'center',
+      imgPosition: 'top center',
       repoUrl: 'https://github.com/jacobpacheco100/gradientology',
       siteUrl: 'https://gradientology.netlify.app/',
     },
