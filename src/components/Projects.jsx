@@ -14,9 +14,9 @@ const Projects = () => {
     {
       name: 'Gradientology',
       img: gradientology,
-      imgPosition: '',
+      imgPosition: 'center',
       repoUrl: 'https://github.com/jacobpacheco100/gradientology',
-      siteUrl: 'https://jacobpacheco100.github.io/gradientology/',
+      siteUrl: 'https://gradientology.netlify.app/',
     },
     {
       name: 'Audiophile E-Comerce Store',
