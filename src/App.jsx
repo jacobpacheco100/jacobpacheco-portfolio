@@ -75,7 +75,7 @@ function App() {
           }}
         ></div>
         {/* content */}
-        <Container>
+        <Container maxW={1400}>
           <Navbar
             about={() => scrollToSection(about)}
             projects={() => scrollToSection(projects)}
@@ -86,7 +86,7 @@ function App() {
             projects={() => scrollToSection(projects)}
             contact={() => scrollToSection(contact)}
           />
-          <Hero continueBtn={() => scrollToSection(about)} />
+          <Hero projectsBtn={() => scrollToSection(projects)} />
         </Container>
       </Box>
 
@@ -98,7 +98,7 @@ function App() {
         minH={{ base: 880, md: 857 }}
         bg='white'
       >
-        <Container>
+        <Container maxW={1400}>
           <About />
         </Container>
       </Box>

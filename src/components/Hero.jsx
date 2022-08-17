@@ -12,14 +12,20 @@ import {
 import hero from '../images/illustrations/hero.png'
 import { AiFillGithub } from 'react-icons/ai'
 
-const Hero = ({ continueBtn }) => {
+const Hero = ({ projectsBtn }) => {
   return (
     //424
-    <Flex mt={100} justify='space-between' align='center'>
-      <Box zIndex={1} maxW={{ base: 350, md: 900 }} pr={5}>
+    <Flex mt={120} justify='space-between' align='center'>
+      <Flex
+        marginInline='auto'
+        direction={'column'}
+        textAlign={{ base: '', sm: 'center' }}
+        align={{ base: '', sm: 'center' }}
+        zIndex={1}
+        maxW={{ base: 350, md: 900 }}
+      >
         <Heading
           fontSize='48px'
-          maxW={{ base: 300, md: 400 }}
           color='white'
           lineHeight={{ base: 0.9, md: 1.2 }}
         >
@@ -34,7 +40,12 @@ const Hero = ({ continueBtn }) => {
           Junior React Developer.
         </Heading>
 
-        <Text m='20px 0 40px 0' color='text.dark' maxW={424}>
+        <Text
+          m='20px 0 40px 0'
+          color='text.dark'
+          maxW={424}
+          marginInline='auto'
+        >
           Welcome! I specialize in designing and developing high quality web
           applications
         </Text>
@@ -50,12 +61,19 @@ const Hero = ({ continueBtn }) => {
           >
             <AiFillGithub color='white' fontSize={32} />
           </Button>
-          <Button onClick={continueBtn} h={50} variant='primary'>
-            Continue
+          <Button onClick={projectsBtn} h={50} variant='primary'>
+            My Projects
           </Button>
         </HStack>
-      </Box>
-      <Img src={hero} display={{ base: 'none', md: 'inline' }} />
+      </Flex>
+      <Img
+        src={hero}
+        alt='logo'
+        pos='absolute'
+        left={0}
+        right={0}
+        margin='0 auto'
+      />
     </Flex>
   )
 }
