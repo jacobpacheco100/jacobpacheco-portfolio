@@ -54,11 +54,11 @@ const About = () => {
         top={20}
         left={'0px'}
       >
-        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={react} />
-        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={js} />
-        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={css} />
-        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={html} />
-        <Img w={{ base: '48px', sm: '64px', md: '95px' }} src={git} />
+        <Img w={{ base: '48px', sm: '64px', md: '75px' }} src={react} />
+        <Img w={{ base: '48px', sm: '64px', md: '75px' }} src={js} />
+        <Img w={{ base: '48px', sm: '64px', md: '75px' }} src={css} />
+        <Img w={{ base: '48px', sm: '64px', md: '75px' }} src={html} />
+        <Img w={{ base: '48px', sm: '64px', md: '75px' }} src={git} />
         <Img
           w={{ base: '48px', sm: '64px', md: '95px' }}
           display={{ base: 'block', md: 'none' }}
@@ -114,24 +114,29 @@ const About = () => {
             to learn React Js on scrimba and am still actively learning...
           </Text>
           {/* more icons */}
-          <VStack position={{ md: 'absolute' }} top={810} spacing={10} left={0}>
+          <VStack
+            position={{ md: 'absolute' }}
+            top={840}
+            spacing={'60px'}
+            left={0}
+          >
             <Img
-              w={{ base: '64px', md: '95px' }}
+              w={{ base: '64px', md: '78px' }}
               display={{ base: 'none', md: 'block' }}
               src={bootstrap}
             />
             <Img
-              w={{ base: '64px', md: '95px' }}
+              w={{ base: '64px', md: '75px' }}
               display={{ base: 'none', md: 'block' }}
               src={sass}
             />
             <Img
-              w={{ base: '64px', md: '95px' }}
+              w={{ base: '64px', md: '75px' }}
               display={{ base: 'none', md: 'block' }}
               src={adobe}
             />
             <Img
-              w={{ base: '64px', md: '95px' }}
+              w={{ base: '64px', md: '75px' }}
               display={{ base: 'none', md: 'block' }}
               src={git}
             />

@@ -23,6 +23,7 @@ const Navbar = ({ about, projects, contact }) => {
         <Link onClick={contact}>Contact</Link>
         <Button
           onClick={() => setSocials((prev) => !prev)}
+          bg='transparent'
           variant='socials'
           rightIcon={<ChevronDownIcon />}
         >

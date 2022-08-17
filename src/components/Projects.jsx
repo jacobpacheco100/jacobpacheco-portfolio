@@ -12,6 +12,13 @@ const Projects = () => {
   // add projects here
   const projectData = [
     {
+      name: 'Gradientology',
+      img: gradientology,
+      imgPosition: '',
+      repoUrl: 'https://github.com/jacobpacheco100/gradientology',
+      siteUrl: 'https://jacobpacheco100.github.io/gradientology/',
+    },
+    {
       name: 'Audiophile E-Comerce Store',
       img: audiophile,
       imgPosition: '',
@@ -26,13 +33,6 @@ const Projects = () => {
       imgPosition: '',
       repoUrl: 'https://github.com/jacobpacheco100/bookmark-landing-page',
       siteUrl: 'https://jacobpacheco100.github.io/bookmark-landing-page/',
-    },
-    {
-      name: 'Gradientology',
-      img: gradientology,
-      imgPosition: '',
-      repoUrl: 'https://github.com/jacobpacheco100/gradientology',
-      siteUrl: 'https://jacobpacheco100.github.io/gradientology/',
     },
     {
       name: 'Game Show App',

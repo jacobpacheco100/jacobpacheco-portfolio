@@ -19,6 +19,7 @@ const Project = ({ name, img, repoUrl, siteUrl, imgPosition }) => {
       <Box w='100%'>
         <Link
           href={siteUrl}
+          target='_blank'
           display='block'
           w='100%'
           h={481}
@@ -78,10 +79,20 @@ const Project = ({ name, img, repoUrl, siteUrl, imgPosition }) => {
             </MenuList>
           </Menu>
           <HStack display={{ base: 'none', md: 'block' }} spacing={4}>
-            <Button href={repoUrl} as={Link} variant='projectRepo'>
+            <Button
+              href={repoUrl}
+              target='_blank'
+              as={Link}
+              variant='projectRepo'
+            >
               <Img src={gitIcon} />
             </Button>
-            <Button href={siteUrl} as={Link} variant='projectSite'>
+            <Button
+              href={siteUrl}
+              target='_blank'
+              as={Link}
+              variant='projectSite'
+            >
               <Img src={linkIcon} />
             </Button>
           </HStack>
