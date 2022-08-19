@@ -37,7 +37,7 @@ const About = () => {
         maxW={{ base: 700, md: 720 }}
         position='relative'
       >
-        <Heading variant='sectionHeading'>
+        <Heading variant='sectionHeading' color={'#50505c'}>
           About
           <br />
           Me...
@@ -45,10 +45,10 @@ const About = () => {
 
         {/* first text */}
         <Text mt={12} color='text.light'>
-          I am a self tought web developer / graphic designer with 3 years of
-          client work expirience. My service is developing and or designing
-          stylish fully functional responsive websites with strategy in mind for
-          growing your business
+          My name is Jacob Pacheco, im a junior frontend web developer and a
+          Treehouse Techdegree graduate. I develope functional, modern, and
+          maintainable websites, Im especially proefficient in accurately
+          replicating designs / mockups into code
         </Text>
         {/* setup img */}
         <Box
@@ -63,15 +63,17 @@ const About = () => {
         />
         {more && (
           <Box>
-            <Heading mt={20} variant='sectionHeading'>
+            <Heading mt={20} variant='sectionHeading' color={'#50505c'}>
               Education
             </Heading>
             <Flex mt={12} align='center'>
               <SiTreehouse fontSize={40} color='#5FCF80' />
-              <Text color='black' fontWeight='bold' ml={5}>
+              <Text color='#50505c' fontWeight='bold' ml={5}>
                 Treehouse Techdegree Graduate
               </Text>
               <Link
+                target={'_blank'}
+                href='https://teamtreehouse.com/profiles/jacobpacheco3'
                 display={{ base: 'none', md: 'inline' }}
                 textDecor='underline'
                 color='primary'
@@ -81,16 +83,17 @@ const About = () => {
               </Link>
             </Flex>
             <Text mt={10} color='text.light'>
-              My web developement journey started when i was 16, i had already
+              My web developement journey started when I was 16, I had already
               started little bisnuess as an ameature graphic design freelancer
               on twitter ( my twitter ) and i decided to kick it up a notch and
-              learn code. After learning the basics of html and css, i decided
-              to take the Treehouse Techdegree course which has been fantastic
-              and would recomend to anyone. Of course i studied MDN
-              documentation and watch tutorials here and there aswell. Once I
-              learned more advanced Js topics like AJAX, local storage, API’s,
-              Array itterations, i decided to learn React Js on scrimba and am
-              still actively learning...
+              learn code. After learning the basics of html and css, I decided
+              to take the Treehouse Techdegree course, which has been a
+              fantastic experience. I studied deeply into MDN documentation and
+              watch tutorials here and there aswell. Once I learned more
+              advanced Js topics like AJAX, local storage, API’s, Array
+              itterations, I decided to learn React Js on scrimba and am still
+              actively learning. This portfolio would actually be my first React
+              site...
             </Text>
             <Grid
               display={{ base: 'grid', xl: 'none' }}

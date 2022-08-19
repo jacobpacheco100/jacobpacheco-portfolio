@@ -14,7 +14,7 @@ const theme = extendTheme({
       },
       p: {
         fontSize: 18,
-        fontWeight: '400',
+        fontWeight: '500',
       },
     },
   },

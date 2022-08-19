@@ -15,6 +15,7 @@ const IconGroup = ({
   return (
     <Stack spacing={spacing} direction={direction}>
       <Flex
+        target={'_blank'}
         href='https://www.upwork.com/freelancers/~011c91af7d258b29fc'
         as={Link}
         _hover={{ bg: bgHV, color: colorHV }}
@@ -33,6 +34,7 @@ const IconGroup = ({
       </Flex>
 
       <Flex
+        target={'_blank'}
         href='https://www.linkedin.com/in/jacobpachecofrontenddev/'
         as={Link}
         _hover={{ bg: bgHV, color: colorHV }}
@@ -50,6 +52,7 @@ const IconGroup = ({
       </Flex>
 
       <Flex
+        target={'_blank'}
         href='https://twitter.com/JDesignsArt'
         as={Link}
         _hover={{ bg: bgHV, color: colorHV }}
@@ -67,6 +70,7 @@ const IconGroup = ({
       </Flex>
 
       <Flex
+        target={'_blank'}
         href='https://github.com/JacobPacheco100'
         as={Link}
         _hover={{ bg: bgHV, color: colorHV }}

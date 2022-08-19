@@ -57,7 +57,7 @@ const Projects = () => {
 
   return (
     <Box>
-      <Heading variant='sectionHeading' mb={20}>
+      <Heading variant='sectionHeading' textColor={'#737687'} mb={20}>
         My...
         <br />
         Projects

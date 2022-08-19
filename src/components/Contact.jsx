@@ -21,8 +21,12 @@ const Contact = () => {
       maxW={{ base: '600px', lg: '100%' }}
       mx={{ base: 'auto', lg: 0 }}
     >
-      <Box maxW={355} mr={5}>
-        <Heading variant='sectionHeading' mb={{ base: 10, lg: 7 }}>
+      <Box maxW={400} mr={5}>
+        <Heading
+          variant='sectionHeading'
+          color={'#6d6e85'}
+          mb={{ base: 10, lg: 7 }}
+        >
           Get in <br /> in touch...
         </Heading>
         <Flex
@@ -34,7 +38,7 @@ const Contact = () => {
           <Text mb='25px' color='primary' fontWeight='bold'>
             jacobpachecoofficial@gmail.com
           </Text>
-          <Text mb='45px' fontWeight='400' color='text.light'>
+          <Text mb='45px' color='text.light'>
             Send me an email if you have any questions or are interested in
             starting a project. If you prefer, we can talk elsewhere
           </Text>
@@ -52,7 +56,7 @@ const Contact = () => {
         as={'form'}
         action='post'
         data-netlify='true'
-        maxW={'600px'}
+        maxW={'550px'}
         isRequired
       >
         <VStack spacing={4} color='text.light'>
