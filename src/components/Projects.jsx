@@ -17,7 +17,7 @@ const Projects = () => {
       img: cryptopia,
       imgPosition: 'top center',
       repoUrl: 'https://github.com/jacobpacheco100/Cryptopia',
-      siteUrl: 'https://golden-treacle-2b35e2.netlify.app/',
+      siteUrl: 'https://cryptopia.netlify.app/',
     },
     {
       name: 'Gradientology',
