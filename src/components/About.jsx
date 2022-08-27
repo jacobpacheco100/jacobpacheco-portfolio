@@ -37,7 +37,7 @@ const About = () => {
         maxW={{ base: 700, md: 720 }}
         position='relative'
       >
-        <Heading variant='sectionHeading' color={'#50505c'}>
+        <Heading variant='sectionHeading' color={'#3d404a'}>
           About
           <br />
           Me...

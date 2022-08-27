@@ -5,6 +5,7 @@ import audiophile from '../images/project-previews/audiophile.jpg'
 import bookmark from '../images/project-previews/bookmark.jpg'
 import gameshow from '../images/project-previews/gameshow.jpg'
 import gradientology from '../images/project-previews/gradientology.jpg'
+import cryptopia from '../images/project-previews/cryptopia.png'
 
 import Project from './Project'
 
@@ -12,20 +13,18 @@ const Projects = () => {
   // add projects here
   const projectData = [
     {
+      name: 'Cryptopia',
+      img: cryptopia,
+      imgPosition: 'top center',
+      repoUrl: 'https://github.com/jacobpacheco100/Cryptopia',
+      siteUrl: 'https://golden-treacle-2b35e2.netlify.app/',
+    },
+    {
       name: 'Gradientology',
       img: gradientology,
       imgPosition: 'top center',
       repoUrl: 'https://github.com/jacobpacheco100/gradientology',
       siteUrl: 'https://gradientology.netlify.app/',
-    },
-    {
-      name: 'Audiophile E-Comerce Store',
-      img: audiophile,
-      imgPosition: '',
-      repoUrl:
-        'https://github.com/JacobPacheco100/Audiophile-e-commerce-website',
-      siteUrl:
-        'https://jacobpacheco100.github.io/Audiophile-e-commerce-website/',
     },
     {
       name: 'Bookmark Landing Page',
@@ -57,7 +56,7 @@ const Projects = () => {
 
   return (
     <Box>
-      <Heading variant='sectionHeading' textColor={'#737687'} mb={20}>
+      <Heading variant='sectionHeading' textColor={'#3d404a'} mb={20}>
         My...
         <br />
         Projects
