@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Box } from '@chakra-ui/react'
+import { Heading, Box, Grid, GridItem } from '@chakra-ui/react'
 
 import audiophile from '../images/project-previews/audiophile.jpg'
 import bookmark from '../images/project-previews/bookmark.jpg'
@@ -61,7 +61,13 @@ const Projects = () => {
         <br />
         Projects
       </Heading>
-      {displayProjects}
+      <Grid
+        w={'100%'}
+        templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }}
+        gap={14}
+      >
+        {displayProjects}
+      </Grid>
     </Box>
   )
 }

@@ -104,7 +104,7 @@ function App() {
       </Box>
       {/* projects */}
       <Box ref={projects} as='section' w='100vw' py={40} bg='bg.100'>
-        <Container>
+        <Container maxW={1400}>
           <Projects />
         </Container>
       </Box>
