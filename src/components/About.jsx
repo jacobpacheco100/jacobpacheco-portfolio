@@ -68,7 +68,12 @@ const About = () => {
             </Heading>
             <Flex mt={12} align='center'>
               <SiTreehouse fontSize={40} color='#5FCF80' />
-              <Text color='#50505c' fontWeight='bold' ml={5}>
+              <Text
+                color='#50505c'
+                fontWeight='bold'
+                ml={5}
+                fontSize={{ base: 15, sm: 17 }}
+              >
                 Treehouse Techdegree Graduate
               </Text>
               <Link
@@ -95,13 +100,14 @@ const About = () => {
               actively learning. This portfolio would actually be my first React
               site...
             </Text>
+            {/* mobile skills */}
             <Grid
               display={{ base: 'grid', xl: 'none' }}
               templateColumns='1fr 1fr'
               h={537}
               w={'100%'}
-              my={20}
-              gap={10}
+              mt={20}
+              gap={5}
             >
               {/* react */}
               <Flex
@@ -114,7 +120,7 @@ const About = () => {
               >
                 <HStack>
                   <DiReact fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={{ base: 15 }} fontWeight='bold'>
                     React JS
                   </Text>
                 </HStack>
@@ -131,7 +137,7 @@ const About = () => {
               >
                 <HStack>
                   <DiJavascript1 fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     ES6
                   </Text>
                 </HStack>
@@ -148,7 +154,7 @@ const About = () => {
               >
                 <HStack>
                   <AiFillHtml5 fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     HTML
                   </Text>
                 </HStack>
@@ -165,7 +171,7 @@ const About = () => {
               >
                 <HStack>
                   <DiCss3Full fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     CSS
                   </Text>
                 </HStack>
@@ -182,7 +188,7 @@ const About = () => {
               >
                 <HStack>
                   <SiTailwindcss fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     Tailwind
                   </Text>
                 </HStack>
@@ -199,7 +205,7 @@ const About = () => {
               >
                 <HStack>
                   <SiBootstrap fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     Bootstrap
                   </Text>
                 </HStack>
@@ -216,7 +222,7 @@ const About = () => {
               >
                 <HStack>
                   <DiSass fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     Sass
                   </Text>
                 </HStack>
@@ -233,7 +239,7 @@ const About = () => {
               >
                 <HStack>
                   <SiChakraui fontSize={25} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     Chakra UI
                   </Text>
                 </HStack>
@@ -250,7 +256,7 @@ const About = () => {
               >
                 <HStack>
                   <FaGitAlt fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     Git
                   </Text>
                 </HStack>
@@ -267,7 +273,7 @@ const About = () => {
               >
                 <HStack>
                   <FiFigma fontSize={28} color={'#7F00FE'} />
-                  <Text fontSize={17} fontWeight='bold'>
+                  <Text fontSize={15} fontWeight='bold'>
                     Figma
                   </Text>
                 </HStack>
@@ -275,7 +281,12 @@ const About = () => {
             </Grid>
           </Box>
         )}
-        <Button onClick={toggleMore} mt={12} w={100} variant='plusInfo'>
+        <Button
+          onClick={toggleMore}
+          mt={{ base: 10 }}
+          w={100}
+          variant='plusInfo'
+        >
           {more ? 'Less' : 'More'}
         </Button>
       </Flex>

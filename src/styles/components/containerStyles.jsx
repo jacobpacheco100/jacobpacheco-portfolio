@@ -3,7 +3,10 @@ export const containerStyles = {
   baseStyle: {
     // maxW='container.lg' px={10}
     maxW: '1100px',
-    px: 10,
+    px: {
+      base: '20px',
+      sm: '60px',
+    },
   },
   // styles for different sizes ("sm", "md", "lg")
   sizes: {},

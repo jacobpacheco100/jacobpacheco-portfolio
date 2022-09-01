@@ -21,7 +21,7 @@ const Contact = () => {
       maxW={{ base: '600px', lg: '100%' }}
       mx={{ base: 'auto', lg: 0 }}
     >
-      <Box maxW={400} mr={5}>
+      <Box maxW={500} mr={5}>
         <Heading
           variant='sectionHeading'
           color={'#6d6e85'}

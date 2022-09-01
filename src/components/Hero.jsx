@@ -15,7 +15,11 @@ import { AiFillGithub } from 'react-icons/ai'
 const Hero = ({ projectsBtn }) => {
   return (
     //424
-    <Flex mt={120} justify='space-between' align='center'>
+    <Flex
+      mt={{ base: 10, sm: 20, md: 120 }}
+      justify='space-between'
+      align='center'
+    >
       <Flex
         marginInline='auto'
         direction={'column'}

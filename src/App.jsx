@@ -110,7 +110,7 @@ function App() {
       </Box>
       {/* contact */}
       <Box ref={contact} as='section' w='100vw' py={40} bg='bg.200'>
-        <Container>
+        <Container maxW={1400}>
           <Contact />
         </Container>
       </Box>
