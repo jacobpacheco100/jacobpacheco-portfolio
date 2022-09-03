@@ -63,7 +63,7 @@ const Projects = () => {
       </Heading>
       <Grid
         w={'100%'}
-        templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }}
+        templateColumns={{ base: 'repeat(1, 1fr)', xl: 'repeat(2, 1fr)' }}
         gap={14}
       >
         {displayProjects}
