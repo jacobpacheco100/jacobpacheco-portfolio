@@ -6,12 +6,20 @@ import bookmark from '../images/project-previews/bookmark.jpg'
 import gameshow from '../images/project-previews/gameshow.jpg'
 import gradientology from '../images/project-previews/gradientology.jpg'
 import cryptopia from '../images/project-previews/cryptopia.png'
+import skotcha from '../images/project-previews/skotcha.png'
 
 import Project from './Project'
 
 const Projects = () => {
   // add projects here
   const projectData = [
+    {
+      name: 'Skotcha',
+      img: skotcha,
+      imgPosition: 'top center',
+      repoUrl: 'https://github.com/jacobpacheco100/Skotcha',
+      siteUrl: 'https://skotcha.netlify.app/',
+    },
     {
       name: 'Cryptopia',
       img: cryptopia,
