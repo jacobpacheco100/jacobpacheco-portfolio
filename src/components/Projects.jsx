@@ -18,7 +18,7 @@ const Projects = () => {
       img: skotcha,
       imgPosition: 'top center',
       repoUrl: 'https://github.com/jacobpacheco100/Skotcha',
-      siteUrl: 'https://skotcha.netlify.app/',
+      siteUrl: 'https://skotcha.netlify.app/a',
     },
     {
       name: 'Cryptopia',
