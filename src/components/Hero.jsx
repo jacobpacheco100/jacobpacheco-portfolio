@@ -16,7 +16,7 @@ const Hero = ({ projectsBtn }) => {
   return (
     //424
     <Flex
-      mt={{ base: 10, sm: 20, md: 120 }}
+      mt={{ base: 20, sm: 20, md: 120 }}
       justify='space-between'
       align='center'
     >
@@ -76,7 +76,10 @@ const Hero = ({ projectsBtn }) => {
         pos='absolute'
         left={0}
         right={0}
+        rotate
+        w={1300}
         margin='0 auto'
+        opacity={{ base: 0, sm: 80 }}
       />
     </Flex>
   )

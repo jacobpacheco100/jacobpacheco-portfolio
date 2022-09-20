@@ -30,7 +30,11 @@ const About = () => {
   }
 
   return (
-    <Flex justify={'space-between'} pt={{ base: 120 }} pb={{ base: 40 }}>
+    <Flex
+      justify={'space-between'}
+      pt={{ base: 20, md: 120 }}
+      pb={{ base: 20, md: 40 }}
+    >
       <Flex
         direction='column'
         w='100%'

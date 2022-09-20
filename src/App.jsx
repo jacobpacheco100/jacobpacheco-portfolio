@@ -103,13 +103,25 @@ function App() {
         </Container>
       </Box>
       {/* projects */}
-      <Box ref={projects} as='section' w='100vw' py={40} bg='bg.100'>
+      <Box
+        ref={projects}
+        as='section'
+        w='100vw'
+        py={{ base: 20, md: 40 }}
+        bg='bg.100'
+      >
         <Container maxW={1400}>
           <Projects />
         </Container>
       </Box>
       {/* contact */}
-      <Box ref={contact} as='section' w='100vw' py={40} bg='bg.200'>
+      <Box
+        ref={contact}
+        as='section'
+        w='100vw'
+        py={{ base: 20, md: 40 }}
+        bg='bg.200'
+      >
         <Container maxW={1400}>
           <Contact />
         </Container>

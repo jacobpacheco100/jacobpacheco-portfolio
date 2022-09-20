@@ -23,72 +23,72 @@ const DropMenu = ({ about, projects, contact }) => {
         color='white'
         fontSize={30}
       />
-      {menu && (
-        <Flex
-          position={'fixed'}
-          pt='100px'
-          zIndex={2}
-          bg='primary'
-          w='74vw'
-          h='100vh'
-          top={0}
-          left={0}
-          direction='column'
-        >
-          <Container maxW='container.lg' px={10}>
-            <VStack
-              w='100%'
-              spacing='30px'
-              fontWeight='medium'
-              color='white'
-              textTransform='uppercase'
-              onClick={toggleMenu}
-            >
-              <Link
-                onClick={about}
-                variant='menuLink'
-                pb={7}
-                borderBottom='1px solid #9289FF'
-                w='100%'
-                textAlign='center'
-              >
-                about
-              </Link>
-              <Link
-                onClick={projects}
-                variant='menuLink'
-                pb={7}
-                borderBottom='1px solid #9289FF'
-                w='100%'
-                textAlign='center'
-              >
-                Projects
-              </Link>
-              <Link
-                onClick={contact}
-                variant='menuLink'
-                pb={7}
-                borderBottom='1px solid #9289FF'
-                w='100%'
-                textAlign='center'
-              >
-                Contact
-              </Link>
-            </VStack>
 
-            <Flex h='46vh' align='center' justify='center'>
-              <IconGroup
-                spacing={8}
-                direction='column'
-                color='white'
-                bg='#400A77'
-                colorHV='white'
-                bgHV='primary'
-              />
-            </Flex>
-          </Container>
-        </Flex>
-      )}
+      <Flex
+        className={menu ? 'slide' : 'hide'}
+        position={'fixed'}
+        pt='100px'
+        zIndex={2}
+        bg='primary'
+        w='74vw'
+        h='100vh'
+        top={0}
+        left={0}
+        direction='column'
+      >
+        <Container maxW='container.lg' px={10}>
+          <VStack
+            w='100%'
+            spacing='30px'
+            fontWeight='medium'
+            color='white'
+            textTransform='uppercase'
+            onClick={toggleMenu}
+          >
+            <Link
+              onClick={about}
+              variant='menuLink'
+              pb={7}
+              borderBottom='1px solid #9289FF'
+              w='100%'
+              textAlign='center'
+            >
+              about
+            </Link>
+            <Link
+              onClick={projects}
+              variant='menuLink'
+              pb={7}
+              borderBottom='1px solid #9289FF'
+              w='100%'
+              textAlign='center'
+            >
+              Projects
+            </Link>
+            <Link
+              onClick={contact}
+              variant='menuLink'
+              pb={7}
+              borderBottom='1px solid #9289FF'
+              w='100%'
+              textAlign='center'
+            >
+              Contact
+            </Link>
+          </VStack>
+
+          <Flex h='46vh' align='center' justify='center'>
+            <IconGroup
+              spacing={8}
+              direction='column'
+              color='white'
+              bg='#400A77'
+              colorHV='white'
+              bgHV='primary'
+            />
+          </Flex>
+        </Container>
+      </Flex>
     </Flex>
   )
 }
