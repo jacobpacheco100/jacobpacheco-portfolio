@@ -4,7 +4,7 @@ import { Heading, Box, Grid, GridItem } from '@chakra-ui/react'
 import audiophile from '../images/project-previews/audiophile.jpg'
 import bookmark from '../images/project-previews/bookmark.jpg'
 import gameshow from '../images/project-previews/gameshow.jpg'
-import gradientology from '../images/project-previews/gradientology.jpg'
+import gradientology from '../images/project-previews/gradientology.png'
 import cryptopia from '../images/project-previews/cryptopia.png'
 import skotcha from '../images/project-previews/skotcha.png'
 
