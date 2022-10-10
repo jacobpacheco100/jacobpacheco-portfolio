@@ -70,6 +70,7 @@ const Hero = ({ projectsBtn }) => {
           </Button>
         </HStack>
       </Flex>
+
       <Img
         src={hero}
         alt='logo'
@@ -79,7 +80,6 @@ const Hero = ({ projectsBtn }) => {
         rotate
         w={1300}
         margin='0 auto'
-        opacity={{ base: 0, sm: 80 }}
       />
     </Flex>
   )
