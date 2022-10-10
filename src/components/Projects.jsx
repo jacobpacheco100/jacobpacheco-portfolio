@@ -7,12 +7,20 @@ import gameshow from '../images/project-previews/gameshow.jpg'
 import gradientology from '../images/project-previews/gradientology.png'
 import cryptopia from '../images/project-previews/cryptopia.png'
 import skotcha from '../images/project-previews/skotcha.png'
+import modivel from '../images/project-previews/modivel.png'
 
 import Project from './Project'
 
 const Projects = () => {
   // add projects here
   const projectData = [
+    {
+      name: 'Modivel Design Agency',
+      img: modivel,
+      imgPosition: 'top left',
+      repoUrl: 'https://github.com/jacobpacheco100/modivel-design-agency',
+      siteUrl: 'https://modivel.netlify.app/',
+    },
     {
       name: 'Skotcha',
       img: skotcha,
